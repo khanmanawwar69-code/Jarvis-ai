@@ -355,7 +355,7 @@ private suspend fun askGemini(
 ): String = withContext(Dispatchers.IO) {
 
     val url = URL(
-        "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=$apiKey"
+        "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.8-flash:generateContent?key=$apiKey"
     )
 
     val body = JSONObject().apply {
